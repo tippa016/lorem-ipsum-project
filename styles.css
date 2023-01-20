@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 115%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the Banner */
+header {
+    background-image: url("images/bigcatpic.jpg");
+    height: 100vh;
+    min-height: 600px;
+    max-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header section {
+    padding: 1rem;
+}
+
+header section h1 {
+    color: #e0e0e0
+}
+
+header section p {
+    color: #d0d0d0;
+    font-size: 1.2em;
+}
+
+/* Center the centered-main class */
+.centered-main {
+    width: 70%;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+/* Style floated boxes*/
+.box-right {
+    box-sizing: content-box;
+    float: right;
+    width: 350px;
+    padding: 0.5em;
+    border: 2px soldid #336699;
+    margin: 0 0 0 1em;
+}
+.box-right img {
+    width: 100%;
+}
+
+.clear-float {
+    clear: both;
+}
