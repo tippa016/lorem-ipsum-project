@@ -6,10 +6,32 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+/* Set Color Variables*/
+:root {
+    --text: #44321A;
+    --background: #f9f7f6;    ;
+    --primary: #80A62E;
+    --accent: #39345b;
+    --footer-background: #D9D0C7;
+    --link-hover: #718C35;
+
+}
+
 body {
     font-size: 115%;
     margin: 0;
     padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+a:link, a:visited {
+    color: var(--other-accent);
+}
+
+a:hover {
+    color: var(--link-hover);
 }
 
 /* Style the Banner */
@@ -26,11 +48,11 @@ header section {
 }
 
 header section h1 {
-    color: #e0e0e0
+    color: var(--text)
 }
 
 header section p {
-    color: #d0d0d0;
+    color: var(--accent);
     font-size: 1.2em;
 }
 
@@ -47,8 +69,9 @@ header section p {
     float: right;
     width: 350px;
     padding: 0.5em;
-    border: 2px soldid #336699;
+    border: 2px soldid var(--accent);
     margin: 0 0 0 1em;
+
 }
 .box-right img {
     width: 100%;
@@ -56,4 +79,9 @@ header section p {
 
 .clear-float {
     clear: both;
+}
+
+footer {
+    background-color:var(--footer-background);
+    padding: 0.5em 0;
 }
